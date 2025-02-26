@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Student Details</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Student Lookup</h1>
+        <label for="searchRegNumber">Enter Registration Number:</label>
+        <input type="text" id="searchRegNumber">
+        <button onclick="fetchStudentDetails()">Search</button>
+
+        <div id="studentDetails"></div>
+    </div>
+
+    <script src="view-students.js"></script>
+
+</body>
+</html>

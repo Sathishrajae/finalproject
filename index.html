@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Student Registration</h1>
+        <form id="studentForm">
+            <label for="regNumber">Registration Number:</label>
+            <input type="text" id="regNumber" required oninput="assignStudentName()">
+
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" readonly>
+
+            <label for="photo">Upload Photo:</label>
+            <input type="file" id="photo" accept="image/*" required>
+
+            <button type="submit">Register Student</button>
+        </form>
+    </div>
+
+    <script src="register.js"></script>
+
+</body>
+</html>
